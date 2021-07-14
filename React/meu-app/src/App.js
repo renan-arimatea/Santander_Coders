@@ -1,10 +1,20 @@
-
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+import React from 'react'
+class App extends React.Component {
+  render () {
+    return (
+      <div>
+        <p>
+          Meu primeiro paragrafo
+        </p>
+        <p>
+          Meu segundo paragrafo
+        </p>
+        <p>
+          {new Date().toLocaleDateString('pt-br')}
+        </p>
+      </div>
+    );
+  }
 }
 
 export default App;
